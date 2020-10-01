@@ -33,4 +33,25 @@ console.log(person.name);
 person['name'] = 'Pranay';
 console.log(person['name']);
 
+//----------Array-----------    
+//1. JS supports dynamic arrays
+//2. Array is an Object in JS
+let selectedColors = []; // Empty Array [] is array literal
+selectedColors = ['Red', 'blue'];
+console.log(selectedColors);
 
+selectedColors[2] = 'This is element at index 2';
+selectedColors[3] = 4;
+
+console.log(selectedColors.length);
+
+
+// Functions in JS
+// Declared with 'function keyword'
+
+function sayHello(name)
+{
+    console.log("Hello "+name);
+}
+
+sayHello('Proto');
