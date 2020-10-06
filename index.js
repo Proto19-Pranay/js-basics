@@ -55,3 +55,25 @@ function sayHello(name)
 }
 
 sayHello('Proto');
+
+//-------------Comparison and Equality operators--------
+// Strict Equality operator '===' Type + Value
+console.log(1 === 1); //True
+console.log('1' === 1); //False
+
+// Loose Equality operator '==' Value only
+console.log('1' == 1); //True
+
+//------------Ternary Operators----------
+// Problem statement: to identify the type of customer
+
+let points = 90;
+type = points > 100 ? 'Gold' : 'Silver';
+console.log(type);
+
+//--Logical Operators---
+
+let userColor = null;
+let defaultColor = 'green';
+selectedColor = userColor || defaultColor;
+console.log(selectedColor);
