@@ -77,3 +77,4 @@ let userColor = null;
 let defaultColor = 'green';
 selectedColor = userColor || defaultColor;
 console.log(selectedColor);
+
