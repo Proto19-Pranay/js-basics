@@ -71,3 +71,57 @@ Circle1.call({}, 1); // Same as-> //const circle1obj = new Circle1(1);
 
 // If we want to pass 2nd arguement as an Array
 Circle1.apply({}, [1,2,3,4]);
+
+
+// Value Types vs Reference Types
+/*
+Value types (Primitives): Number, String, Boolean, Symbol, Undefined, null;
+
+# Value types are independent of each other whereas reference types are
+  dependent on each other 
+
+# Primitives are copied by their value
+# Objects are copied by their reference
+
+Reference Types: Arrays, Functions, Objects
+*/
+
+
+// Enumerating properties of an object
+
+const square = {
+    length: 10,
+    area() {
+        length*length;
+    }
+};
+
+for(let i of Object.keys(square))
+    console.log(i);
+
+for(let i of Object.entries(square))
+    console.log(i);
+
+if('length' in square) console.log('Yes');
+
+// Cloning of Objects
+
+const another = {};
+
+for(let itr in square){
+    another[itr] = square[itr];
+}
+console.log("Another object: ",another);
+ 
+ // Preferred way for cloning objects
+ const another1 = Object.assign({}, square);
+ console.log("Another1: ",another1);
+
+ const another2 = Object.assign({
+     colorprop: 'Red'
+ }, square);
+ console.log("Another2: ",another2);
+
+ // Shortest syntax for object cloning
+ const another3 = {...another3};  //... is spread operator
+ console.log("Another3: ",another3);

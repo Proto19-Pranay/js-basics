@@ -53,7 +53,7 @@ let colorArray = ['Red','Blue','Green','Cyan']; //Iterating array
 for(let iterate in colorArray)
 console.log(colorArray[iterate], "index:", iterate);
 
-// For - of loop: used for iterting elements in an array (Efficient for arrays)
+// For - of loop: used for iterting elements in an array (Efficient for arrays, maps and all iterables)
 // In for of loop we can iterate array elements without mentioning Array index
 console.log('----For in: Iterating with the help of For of loop----');
 for(let coloritr of colorArray)
