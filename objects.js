@@ -123,5 +123,5 @@ console.log("Another object: ",another);
  console.log("Another2: ",another2);
 
  // Shortest syntax for object cloning
- const another3 = {...another3};  //... is spread operator
+ const another3 = {...another2};  //... is spread operator
  console.log("Another3: ",another3);
