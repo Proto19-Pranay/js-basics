@@ -20,7 +20,7 @@ const courses = [
 //console.log(courses.sort((a,b) => (a.name < b.name))); wont work
 
 courses.sort(function(a, b){
-    const nameA = a.name.toUpperCase();
+    const nameA = a.name.toUpperCase(); // converting both strings in same case
     const nameB = b.name.toUpperCase();
 
     if (nameA < nameB) return -1;
@@ -29,3 +29,11 @@ courses.sort(function(a, b){
 });
 
 console.log(courses);
+
+//  Array Filtering ------ Filter method
+
+let arraytobefiltered = [1,2,3,4,-5,6,-7,8];
+
+let filteredarray = arraytobefiltered.filter(n => n>=0); // Filtering an array
+console.log("Filtered array: ", filteredarray);
+
