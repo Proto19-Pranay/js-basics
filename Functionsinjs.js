@@ -14,3 +14,23 @@ function findSquare(num)
 
 let power = findSquare(7);
 console.log("Power is : "+power);
+
+// Anonymous function expression
+
+let run = function() {
+    console.log("Run");
+};
+
+run();
+
+// Named Function Expression
+// Cannot call somefun() here, 
+// Hoisting : process by JS engine to move the functions up in the code file
+
+let somefun = function walk(){
+    console.log("Walk");
+}
+
+somefun();
+//walk();// Wont work
+
