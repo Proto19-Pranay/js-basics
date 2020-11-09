@@ -5,6 +5,8 @@ console.log(name); //Printing on console
 const rateOfInterest = 0.3; // declaration of constant variable
 console.log(rateOfInterest); //printing constant variable
 
+// let vs var let is limited to a block, whereas var to a function, and var attaches variable with window object
+
 //--------------Variables (Primitives)----------
 let myName = "Somename"; //String literal
 let age = 22; // Number literal
